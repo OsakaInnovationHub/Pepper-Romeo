@@ -29,7 +29,7 @@
                             <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
                             <Output name="TakePhoto" type="1" type_size="1" nature="2" inner="0" tooltip="" id="5" />
                         </Box>
-                        <Box name="Set Language" id="2" localization="8" tooltip="Select the language you would like the robot to speak and understand. Any following call to&#x0A;ALSpeechRecognition (Speech Reco. box for instance) or ALTextToSpeech (Say box&#x0A;for instance) will use this language." x="250" y="141">
+                        <Box name="Set Language" id="2" localization="8" tooltip="Select the language you would like the robot to speak and understand. Any following call to&#x0A;ALSpeechRecognition (Speech Reco. box for instance) or ALTextToSpeech (Say box&#x0A;for instance) will use this language." x="123" y="36">
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
                                 <content>
@@ -101,7 +101,7 @@
                             </Parameter>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Say" id="3" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="88" y="139">
+                        <Box name="Say" id="3" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="267" y="48">
                             <bitmap>media/images/box/interaction/say.png</bitmap>
                             <script language="4">
                                 <content>
@@ -349,7 +349,7 @@ class MyClass(GeneratedClass):
                             <Resource name="All motors" type="Lock" timeout="0" />
                             <Resource name="Stiffness" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Wait" id="6" localization="8" tooltip="Wait a moment before sending a signal on the output. &#x0A;Can be stopped anytime. &#x0A;Stimulating the input again before output is activated restarts the waiting period.&#x0A;" x="97" y="526">
+                        <Box name="Wait" id="6" localization="8" tooltip="Wait a moment before sending a signal on the output. &#x0A;Can be stopped anytime. &#x0A;Stimulating the input again before output is activated restarts the waiting period.&#x0A;" x="95" y="584">
                             <bitmap>media/images/box/wait.png</bitmap>
                             <script language="4">
                                 <content>
@@ -2623,22 +2623,22 @@ class MyClass(GeneratedClass):
                             <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
                             <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
                         </Box>
-                        <Link inputowner="1" indexofinput="2" outputowner="2" indexofoutput="3" />
-                        <Link inputowner="2" indexofinput="2" outputowner="3" indexofoutput="4" />
                         <Link inputowner="5" indexofinput="2" outputowner="6" indexofoutput="4" />
-                        <Link inputowner="3" indexofinput="2" outputowner="0" indexofoutput="2" />
                         <Link inputowner="9" indexofinput="2" outputowner="1" indexofoutput="5" />
                         <Link inputowner="6" indexofinput="2" outputowner="9" indexofoutput="3" />
                         <Link inputowner="5" indexofinput="2" outputowner="0" indexofoutput="2" />
                         <Link inputowner="6" indexofinput="2" outputowner="8" indexofoutput="3" />
-                        <Link inputowner="11" indexofinput="2" outputowner="2" indexofoutput="3" />
-                        <Link inputowner="4" indexofinput="2" outputowner="2" indexofoutput="3" />
                         <Link inputowner="8" indexofinput="2" outputowner="4" indexofoutput="5" />
                         <Link inputowner="14" indexofinput="2" outputowner="5" indexofoutput="4" />
                         <Link inputowner="13" indexofinput="2" outputowner="14" indexofoutput="4" />
-                        <Link inputowner="7" indexofinput="2" outputowner="2" indexofoutput="3" />
-                        <Link inputowner="2" indexofinput="2" outputowner="6" indexofoutput="4" />
-                        <Link inputowner="10" indexofinput="2" outputowner="2" indexofoutput="3" />
+                        <Link inputowner="2" indexofinput="2" outputowner="0" indexofoutput="2" />
+                        <Link inputowner="11" indexofinput="2" outputowner="3" indexofoutput="4" />
+                        <Link inputowner="7" indexofinput="2" outputowner="3" indexofoutput="4" />
+                        <Link inputowner="4" indexofinput="2" outputowner="3" indexofoutput="4" />
+                        <Link inputowner="1" indexofinput="2" outputowner="3" indexofoutput="4" />
+                        <Link inputowner="10" indexofinput="2" outputowner="3" indexofoutput="4" />
+                        <Link inputowner="3" indexofinput="2" outputowner="2" indexofoutput="3" />
+                        <Link inputowner="3" indexofinput="2" outputowner="6" indexofoutput="4" />
                     </Diagram>
                 </BehaviorKeyframe>
             </BehaviorLayer>
